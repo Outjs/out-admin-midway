@@ -1,6 +1,7 @@
-
-<p align="center" style="font-size:50px; color: #689f64">
-  Outjs
+<p align="center">
+<font size="7" color="#689f64">
+  out-admin-midway
+</font>
 </p>
 <p align="center">out-admin-midway是使用 Midway.js 3.x（上层使用 Koa）开发的一个后台权限管理系统系统
 <p align="center">
