@@ -91,3 +91,4 @@ $ open http://localhost:7001/
 
 ![image](https://github.com/Outjs/static/blob/main/outjs/ui-2.png)
 
+### 如果项目对你有用，给颗星支持一下，后续将添加更多功能
