@@ -76,6 +76,18 @@ $ open http://localhost:7001/
 - 先通过/api/auth/login登录获取到jwt的token
 - 在swagger输入token进行授权，即可正常访问接口
 
+![image](https://github.com/Outjs/static/blob/main/outjs/outjs-1.png)
+
+![image](https://github.com/Outjs/static/blob/main/outjs/outjs-2.png)
+
+![image](https://github.com/Outjs/static/blob/main/outjs/outjs-3.png)
+
+## 前端项目
+
+前端还在整理中，最近两天会更新上去
 
 
+![image](https://github.com/Outjs/static/blob/main/outjs/ui-1.png)
+
+![image](https://github.com/Outjs/static/blob/main/outjs/ui-2.png)
 
