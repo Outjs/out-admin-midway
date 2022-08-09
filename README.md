@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/version-1.0.0-green#:~:text=version-,version,-1.0.0" alt="codecov" />
   </a>
   <a href="hhttps://github.com/Outjs/out-admin-midway/blob/master/LICENSE" target="_blank">
-    <img src="https://img.shields.io/github/license/Outjs/out-admin-midway?logo=MIT" alt="codecov" />
+    <img src="https://img.shields.io/crates/l/MIT?label=license&logo=MIT" alt="codecov" />
   </a>
 </p>
 
