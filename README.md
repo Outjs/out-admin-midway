@@ -4,7 +4,15 @@
 </p>
 <p align="center">out-admin-midway是使用 Midway.js 3.x（上层使用 Koa）开发的一个后台权限管理系统系统
 <p align="center">
-    
+  <a href="hhttps://github.com/Outjs/out-admin-midway" target="_blank">
+    <img src="https://img.shields.io/badge/midway-3.x-green#:~:text=midway-,midway,-3.x" alt="codecov" />
+  </a>
+  <a href="hhttps://github.com/Outjs/out-admin-midway" target="_blank">
+    <img src="https://img.shields.io/badge/version-1.0.0-green#:~:text=version-,version,-1.0.0" alt="codecov" />
+  </a>
+  <a href="hhttps://github.com/Outjs/out-admin-midway" target="_blank">
+    <img src="https://img.shields.io/github/license/Outjs/out-admin-midway?logo=MIT" alt="codecov" />
+  </a>
 </p>
 
 
