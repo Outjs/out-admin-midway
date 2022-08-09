@@ -4,10 +4,10 @@
   <a href="http://midwayjs.org/" target="_blank">
     <img src="https://img.shields.io/badge/midway-3.x-green#:~:text=midway-,midway,-3.x" alt="codecov" />
   </a>
-  <a href="hhttps://github.com/Outjs/out-admin-midway" target="_blank">
+  <a href="https://github.com/Outjs/out-admin-midway" target="_blank">
     <img src="https://img.shields.io/badge/version-1.0.0-green#:~:text=version-,version,-1.0.0" alt="codecov" />
   </a>
-  <a href="hhttps://github.com/Outjs/out-admin-midway/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/Outjs/out-admin-midway/blob/master/LICENSE" target="_blank">
     <img src="https://img.shields.io/crates/l/MIT?label=license&logo=MIT" alt="codecov" />
   </a>
 </p>
