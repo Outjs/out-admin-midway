@@ -63,9 +63,7 @@ $ open http://localhost:7001/
 
 ## 登录账号
 ```
-账号: admin
-
-密码: 123456
+admin/123456
 ```
 
 
