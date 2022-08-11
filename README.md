@@ -33,7 +33,7 @@ orm: {
     port: 3306,
     username: 'root',
     password: 'root',
-    database: 'order',
+    database: 'admin',
     synchronize: false, // 自动建表 注意：线上部署的时候不要使用，有可能导致数据丢失
     logging: false,
     dateStrings: true,
@@ -90,3 +90,5 @@ admin/123456
 
 ![image](https://github.com/Outjs/static/blob/main/outjs/ui-2.png)
 
+### 欢迎Star和PR
+如果项目对你有用，请给颗星支持一下，如果你有好的建议欢迎PR！
