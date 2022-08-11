@@ -63,9 +63,7 @@ $ open http://localhost:7001/
 
 ## 登录账号
 ```
-账号: admin
-
-密码: 123456
+admin/123456
 ```
 
 
@@ -84,8 +82,9 @@ $ open http://localhost:7001/
 
 ## 前端项目
 
-前端还在整理中，最近两天会更新上去
+配套的前端工程请移步 https://github.com/OutUI/out-admin-react
 
+![image](https://github.com/Outjs/static/blob/main/outjs/ui-3.png)
 
 ![image](https://github.com/Outjs/static/blob/main/outjs/ui-1.png)
 
