@@ -1,5 +1,4 @@
-import { IMiddleware } from '@midwayjs/core';
-import { Middleware } from '@midwayjs/decorator';
+import { Middleware, IMiddleware } from '@midwayjs/core';
 import { NextFunction, Context } from '@midwayjs/koa';
 import { AdminLogService } from '../service/admin/log';
 import { CreateLogDTO } from '../dto/admin/log';
