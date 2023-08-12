@@ -9,7 +9,7 @@ import {
   Patch,
   Body,
   Del,
-} from '@midwayjs/decorator';
+} from '@midwayjs/core';
 import { AdminMenuService } from '../../service/admin/menu';
 import { AdminRoleService } from '../../service/admin/role';
 import { AdminPermissionService } from '../../service/admin/permission';

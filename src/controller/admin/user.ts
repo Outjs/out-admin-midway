@@ -9,7 +9,7 @@ import {
   Patch,
   Del,
   Body,
-} from '@midwayjs/decorator';
+} from '@midwayjs/core';
 import { AdminUserService } from '../../service/admin/user';
 import {
   QueryUserDTO,

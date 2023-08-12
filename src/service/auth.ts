@@ -1,5 +1,5 @@
-import { Provide, Inject, Config } from '@midwayjs/decorator';
-import { InjectEntityModel } from '@midwayjs/orm';
+import { Provide, Inject, Config } from '@midwayjs/core';
+import { InjectEntityModel } from '@midwayjs/typeorm';
 import { JwtService } from '@midwayjs/jwt';
 import { RedisService } from '@midwayjs/redis';
 import { Repository } from 'typeorm';
@@ -33,7 +33,7 @@ export class AuthService {
     console.log(this.jwtConfig.secrect, token);
     await this.redisService.set(
       `admin:accessToken:${data.id}`,
-      token,
+      `token`,
       'EX',
       this.jwtConfig.expiresIn
     );

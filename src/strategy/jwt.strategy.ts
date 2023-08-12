@@ -2,7 +2,7 @@
 
 import { CustomStrategy, PassportStrategy } from '@midwayjs/passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
-import { Config } from '@midwayjs/decorator';
+import { Config } from '@midwayjs/core';
 
 @CustomStrategy()
 export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {

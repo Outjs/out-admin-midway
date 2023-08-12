@@ -1,6 +1,6 @@
 // src/middleware/jwt.middleware.ts
 
-import { Config, Middleware } from '@midwayjs/decorator';
+import { Config, Middleware } from '@midwayjs/core';
 import { PassportMiddleware } from '@midwayjs/passport';
 import { JwtStrategy } from '../strategy/jwt.strategy';
 import * as passport from 'passport';

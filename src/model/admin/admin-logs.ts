@@ -1,9 +1,7 @@
-import { EntityModel } from '@midwayjs/orm';
-import { Column, PrimaryGeneratedColumn } from 'typeorm';
-
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 import { BaseModel } from '../base';
 
-@EntityModel({
+@Entity({
   name: 'admin_operation_log',
 })
 export class AdminLogModel extends BaseModel {

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { EntityModel } from '@midwayjs/orm';
 import {
+  Entity,
   Column,
   AfterLoad,
   PrimaryGeneratedColumn,
@@ -16,7 +16,7 @@ import { AdminRoleModel } from './admin-role';
 import { AdminUserModel } from './admin-user';
 import { AdminMenuModel } from './admin-menu';
 
-@EntityModel({
+@Entity({
   name: 'admin_permissions',
 })
 export class AdminPermissionModel extends BaseModel {

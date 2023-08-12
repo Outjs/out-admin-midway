@@ -1,6 +1,6 @@
 import * as assert from 'assert';
 
-import { Controller, Get, Inject, Query, Del, Body } from '@midwayjs/decorator';
+import { Controller, Get, Inject, Query, Del, Body } from '@midwayjs/core';
 import { AdminLogService } from '../../service/admin/log';
 import { QueryLogDTO, RemoveLogDTO } from '../../dto/admin/log';
 import MyError from '../../error/my-error';

@@ -1,6 +1,5 @@
-import { Catch } from '@midwayjs/decorator';
+import { Catch,MidwayHttpError } from '@midwayjs/core';
 import { Context } from '@midwayjs/koa';
-import { MidwayHttpError } from '@midwayjs/core';
 
 @Catch()
 export class DefaultErrorFilter {

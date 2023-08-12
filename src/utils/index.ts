@@ -1,4 +1,4 @@
-import { Config, Inject, Provide, Scope, ScopeEnum } from '@midwayjs/decorator';
+import { Config, Inject, Provide, Scope, ScopeEnum } from '@midwayjs/core';
 import { JwtService } from '@midwayjs/jwt';
 import * as bcrypt from 'bcryptjs';
 import * as meeko from 'meeko';

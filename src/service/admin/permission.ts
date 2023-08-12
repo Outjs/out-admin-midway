@@ -1,7 +1,7 @@
 import * as assert from 'assert';
 
-import { Provide } from '@midwayjs/decorator';
-import { InjectEntityModel } from '@midwayjs/orm';
+import { Provide } from '@midwayjs/core';
+import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository, Like, In } from 'typeorm';
 import { AdminPermissionModel } from '../../model/admin/admin-permission';
 import {

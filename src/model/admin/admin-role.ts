@@ -1,12 +1,10 @@
-import { EntityModel } from '@midwayjs/orm';
-import { Column, PrimaryGeneratedColumn, ManyToMany } from 'typeorm';
-
+import { Entity, Column, PrimaryGeneratedColumn, ManyToMany } from 'typeorm';
 import { BaseModel } from '../base';
 import { AdminPermissionModel } from './admin-permission';
 import { AdminUserModel } from './admin-user';
 import { AdminMenuModel } from './admin-menu';
 
-@EntityModel({
+@Entity({
   name: 'admin_roles',
 })
 export class AdminRoleModel extends BaseModel {

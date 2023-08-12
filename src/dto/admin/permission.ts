@@ -5,11 +5,11 @@ import { ApiProperty } from '@midwayjs/swagger';
  * 查询权限列表参数
  */
 export class QueryPermDTO {
-  @ApiProperty({ description: '当前页' })
+  @ApiProperty({ example:1, description: '当前页' })
   @Rule(RuleType.number().min(1).max(100000).default(1))
   current?: number;
 
-  @ApiProperty({ description: '每页数量' })
+  @ApiProperty({ example: 10, description: '每页数量' })
   @Rule(RuleType.number().min(1).max(1000).default(10))
   pageSize?: number;
 

@@ -1,28 +1,30 @@
-import * as assert from 'assert';
+import * as assert from "assert";
 
-import { Controller, Get, Post, Inject, Body } from '@midwayjs/decorator';
-import { BaseController } from './base';
-import { AuthService } from '../service/auth';
-import { LoginDTO } from '../dto/auth';
-import MyError from '../error/my-error';
-import { ApiBearerAuth } from '@midwayjs/swagger';
+import { Controller, Get, Post, Inject, Body } from "@midwayjs/core";
+import { BaseController } from "./base";
+import { AuthService } from "../service/auth";
+import { LoginDTO } from "../dto/auth";
+import MyError from "../error/my-error";
+import { ApiBearerAuth } from "@midwayjs/swagger";
+import { Validate } from "@midwayjs/validate";
 
 @ApiBearerAuth()
-@Controller('/auth', {
-  tagName: '管理员登录授权',
-  description: '包含管理员授权登录、获取信息等接口 ',
+@Controller("/auth", {
+  tagName: "a管理员登录授权",
+  description: "包含管理员授权登录、获取信息等接口 ",
 })
 export class AuthController extends BaseController {
-  @Inject('authService')
+  @Inject("authService")
   service: AuthService;
 
-  @Post('/login')
+  @Post("/login")
+  @Validate({ validationOptions: { allowUnknown: true } })
   async login(@Body() params: LoginDTO): Promise<void> {
     // 后续可能有多种登录方式
     const existAdmiUser = await this.service.localHandler(params);
 
     // 检查管理员存在
-    assert.ok(existAdmiUser, new MyError('管理员不存在', 400));
+    assert.ok(existAdmiUser, new MyError("管理员不存在", 400));
 
     // 生成Token
     const token = await this.service.createAdminUserToken(existAdmiUser);
@@ -35,13 +37,13 @@ export class AuthController extends BaseController {
 
     this.success({
       token,
-      currentAuthority: 'admin',
-      status: 'ok',
-      type: 'account',
+      currentAuthority: "admin",
+      status: "ok",
+      type: "account",
     });
   }
 
-  @Post('/logout')
+  @Post("/logout")
   async logout(): Promise<void> {
     if (this.ctx.state.user) {
       const { id } = this.ctx.state.user;
@@ -53,7 +55,7 @@ export class AuthController extends BaseController {
     }
   }
 
-  @Get('/currentUser')
+  @Get("/currentUser")
   async currentUser(): Promise<void> {
     if (this.ctx.state.user) {
       const { id } = this.ctx.state.user;

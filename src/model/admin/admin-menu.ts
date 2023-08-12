@@ -1,5 +1,5 @@
-import { EntityModel } from '@midwayjs/orm';
 import {
+  Entity,
   Column,
   AfterLoad,
   PrimaryGeneratedColumn,
@@ -13,7 +13,7 @@ import { BaseModel } from '../base';
 import { AdminRoleModel } from './admin-role';
 import { AdminPermissionModel } from './admin-permission';
 
-@EntityModel({
+@Entity({
   name: 'admin_menu',
 })
 export class AdminMenuModel extends BaseModel {

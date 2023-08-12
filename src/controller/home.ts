@@ -1,4 +1,4 @@
-import { Controller, Get, Inject } from '@midwayjs/decorator';
+import { Controller, Get, Inject } from '@midwayjs/core';
 import { JwtService } from '@midwayjs/jwt';
 
 @Controller('/', {

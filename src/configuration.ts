@@ -1,10 +1,10 @@
-import { Configuration, App } from '@midwayjs/decorator';
+import { Configuration, App } from '@midwayjs/core';
 import * as koa from '@midwayjs/koa';
-import * as orm from '@midwayjs/orm';
+import * as orm from '@midwayjs/typeorm';
 import * as validate from '@midwayjs/validate';
 import * as info from '@midwayjs/info';
 import * as swagger from '@midwayjs/swagger';
-import * as jwt from '@midwayjs/jwt';
+import * as jwt from '@midwayjs/jwt';``
 import * as passport from '@midwayjs/passport';
 import * as redis from '@midwayjs/redis';
 import { join } from 'path';
