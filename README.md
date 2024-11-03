@@ -21,7 +21,6 @@
 - Redis
 
 
-
 ### 数据库
 
 先将 database 目录下到 sql 文件迁移到数据库，修改默认的config配置文件，位于src/config/config.default.ts
